@@ -53,3 +53,5 @@ Game outline:
 - The user wins if they arrive within a distance from the minimal target point.
 - The user will be punished if he goes to a point in the parameter space with lower cost to the place with a higher cost
 - This game is inspired by the masochistic game "Getting Over It with Bennett Foddy". Hopefully, by blindly and hopelessly traversing through the high-dimensional parameter space with the help of few projections, the player will understand why a VQE is in general a hard task to accomplish.
+
+![alt text](https://github.com/Nakul9621/2021_QA_Fold/blob/main/GamePlay.png)
