@@ -1,7 +1,9 @@
 # Project: Knapsack problem solved with Gate-based Game-like VQE and Annealing-based DQM.
 
 Team: Hybrid Demons (Advanced Hybrid Division)
+
 Gate Sub-Division: Ilan Mitnikov, Yusheng Zhao
+
 Annealing Sub-Division: Nakul Aggarwal, Ziwei Qiu, Victor Onofre 
 
 To represent the effect of any decision by numerical values, the outcome of the decision can be measured by a single value representing gain, profit, loss, cost, or another data category. The comparison of these values gives a total order on the set of all options for a decision. Finding the option with the highest or lowest value can be difficult because the set of available options may be extensive or not explicitly known. The knapsack problem is one of this decision process.
