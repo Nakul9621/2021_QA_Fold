@@ -1,7 +1,8 @@
 # Project: Knapsack problem solved with Gate-based Game-like VQE and Annealing-based DQM.
 
 Team: Hybrid Demons (Advanced Hybrid Division)
-Ziwei Qiu, Ilan Mitnikov, Yusheng Zhao, Nakul Aggarwal , Victor Onofre 
+Gate Sub-Division: Ilan Mitnikov, Yusheng Zhao
+Annealing Sub-Division: Nakul Aggarwal, Ziwei Qiu, Victor Onofre 
 
 To represent the effect of any decision by numerical values, the outcome of the decision can be measured by a single value representing gain, profit, loss, cost, or another data category. The comparison of these values gives a total order on the set of all options for a decision. Finding the option with the highest or lowest value can be difficult because the set of available options may be extensive or not explicitly known. The knapsack problem is one of this decision process.
 
@@ -10,7 +11,7 @@ The knapsack problem can be formally defined as follows: We are given an item se
 In this project, we work on solving the Knapsack problem with both gate-based game running on IonQ hardware and annealing-based DQM/BQM methods running on D-Wave hardware, and to compare between the two methods. We further show using the DQM solver to implement the bounded Knapsack problem.
 
 
-## Annealing: Implement the bounded Knapsack problem with the DQM solver
+## Annealing: Implement the bounded Knapsack problem with the DQM solver (Ziwei Qiu, Victor Onofre)
 We demonstrated solving the Bounded Knapsack Problem with the D-wave Ocean Discrete Quadratic Model (DQM) solver, where we are allowed to take multiple pieces for each item so the variable can take discrete values 0,1,2,... up to b. This extended Knapsack problem has a direct application in stock portofolio optimization where we show a proof-of-concept demonstration in the notebook 'Knapsack_DQM.ipynb'. 
 
 Knapsack problems appear in many real-world decision-making processes, including home energy management, cognitive radio networks, resource management in software, power allocation management, relay selection in secure cooperative wireless communication, etc. 
@@ -21,7 +22,7 @@ Future works on this project include:
 3. Use Knapsack problem as a subroutine and combine it with other NP-hard problems to solve complicated tasks challenging to classical computers.
 4. In the stock selection application, we can better quantify the profits instead of just using earnings as the metric, and have more realistic assumptions.
 
-## Annealing: Implement the Balanced Assignment Problem as BQM and Unbalanced Assignment Problem as DQM
+## Annealing: Implement the Balanced Assignment Problem as BQM and Unbalanced Assignment Problem as DQM (Nakul Aggarwal)
 
 We first started with the idea of the balanced assignment problem which has paramount importance in operations research and industries. We solved it using D-wave Ocean Binary Quadratic Model (BQM) solver where we allot n agents to n tasks such that each agent is alloted to one task and vice-versa. The central objeective is to maximize the efficiency of this model where each agent has a certain efficiency to solve every given task (implemented randomly as a 2-D matrix). We compare our performance with the classical 'Hungarian Algorithm' by comparing the Hamming Distances between the two as a function of the Lagrange multiplier used in annealing based problems. We try to calculate an optimal number of steps if the Hamming distance becomes zero. 
 
@@ -33,7 +34,7 @@ Future works on this project include:
 3. This model can work as a sub-module in nurse-scheduling with complicated constraints and far more steps. 
 
 
-## Gate-based VQE Game
+## Gate-based VQE Game (Ilan Mitnikov, Yusheng Zhao)
 
 Here we designed a game with the goal of finding the solution of the knapsack problem.
 As we know, different optimization problems could be solved by optimizing a VQE like ansazt circuit.
